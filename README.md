@@ -16,9 +16,9 @@ You'll need soldering skills and a soldering iron and to know how to set up a Ra
 | ---- |
 | Multimeter |
 | Soldering Iron, Solder, Wire |
-| Mini HDMI to HDMI Cable |
+| [Mini HDMI to HDMI Cable](https://www.adafruit.com/product/2775) |
 | USB Hub, Keyboard, and Mouse |
-| Test LED, 330Ω Resistor, Breadboard |
+| Test [LED](https://vetco.net/products/nte30036-blue-led-3mm/nte30036), 330Ω Resistor, [Breadboard](https://vetco.net/products/170-point-mini-breadboard-white/vupn6674) |
 
 ## Parts
 |Description|Price|
