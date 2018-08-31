@@ -20,6 +20,22 @@ You'll need soldering skills and a soldering iron and to know how to set up a Ra
 | USB Hub, Keyboard, and Mouse |
 | Test LED, 330Ω Resistor, Breadboard |
 
+## Parts
+|Description|Price|
+|-----------|-----|
+|[Raspberry Pi Zero WH](https://www.adafruit.com/product/3708)|$14|
+|[Raspberry Pi Zero Case](https://www.adafruit.com/product/3252)|$5|
+|[8GB Micro SD Card](https://www.adafruit.com/product/2820)|$10|
+|Micro USB Cable| |
+|[10kΩ Resistor](https://vetco.net/products/10k-ohm-1-4-watt-resistor)|$1|
+|[PN2222 Transistor](https://vetco.net/products/2n3904-bc547-pn2222-2n4401-npn-transistor-5pk-nte123ap-5/nte123ap-5)|$1|
+|[RLY5310C Relay](https://vetco.net/products/relay-5vdc-6vdc-spst-no-500-ma)|$5|
+|[66 x 66 x 28mm ABS Project Box](https://vetco.net/products/66-x-66-x-28mm-abs-box-black/ham-1593jbk)|$4|
+|[20 PIN DIP IC Protoboard](https://vetco.net/products/20-pin-dip-ic-pattern-protoboard-1-8-x-3-6-qty-2/vupn8048)|$3|
+|[2.1mm Mount Jack](https://vetco.net/products/2-1mm-dc-power-panel-mount-jack-ph-2112/ph-2112)|$3|
+|[2.1mm Plug and Cable](https://vetco.net/products/2-1mm-dc-power-plug-right-angle-w-6-cable/ph-tc210)|$3|
+|[Female-Female Breadboard Jumper Wire](https://vetco.net/products/8-5-female-female-rainbow-breadboard-jumper-wire-for-arduino-10-pack/vupn6981)|$4|
+
 # Instructions
 
 ## Warnings
