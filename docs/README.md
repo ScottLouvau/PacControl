@@ -11,33 +11,29 @@ The wire connected to the Start Button in the car just has the wires inserted in
 
 You'll need soldering skills and a soldering iron and to know how to set up a Raspberry Pi computer to build this device.
 
+Here's a quick video of it working - look at the lights on the Start Button to see the car turn off and back on.
+
 <video width="640" height="360" controls>
  <source src="images/walkthrough/QuickDemo.mp4" type="video/mp4" />
 </video>
 
 ## Tools
-| Priority apples | Second priority | Third priority |
-|-------|--------|---------|
-| ambrosia | gala | red delicious |
-| pink lady | jazz | macintosh |
-| honeycrisp | granny smith | fuji |
-
-| Name |
-| ---- |
-| Multimeter |
-| Soldering Iron, Solder, Wire |
-| [Mini HDMI to HDMI Cable](https://www.adafruit.com/product/2775) |
-| USB Hub, Keyboard, and Mouse |
-| Test [LED](https://vetco.net/products/nte30036-blue-led-3mm/nte30036), 330Ω Resistor, [Breadboard](https://vetco.net/products/170-point-mini-breadboard-white/vupn6674) |
+<table>
+<tr><td markdown="span">Multimeter</td></tr>
+<tr><td markdown="span">Soldering Iron, Solder, Wire</td></tr>
+<tr><td markdown="span">[Mini HDMI to HDMI Cable](https://www.adafruit.com/product/2775)</td></tr>
+<tr><td markdown="span">USB Hub, Keyboard, and Mouse</td></tr>
+<tr><td markdown="span">Test [LED](https://vetco.net/products/nte30036-blue-led-3mm/nte30036), 330Ω Resistor, [Breadboard]</td></tr>
+<tr><td markdown="span">(https://vetco.net/products/170-point-mini-breadboard-white/vupn6674)</td></tr>
+</table>
 
 ## Parts
-|Description|Price|
+<tr><td markdown="span">Description|Price|
 |-----------|-----|
 |[Raspberry Pi Zero WH](https://www.adafruit.com/product/3708)|$14|
 |[Raspberry Pi Zero Case](https://www.adafruit.com/product/3252)|$5|
 |[8GB Micro SD Card](https://www.adafruit.com/product/2820)|$10|
-|Micro USB Cable| |
-|[10kΩ Resistor](https://vetco.net/products/10k-ohm-1-4-watt-resistor)|$1|
+|Micro USB Cable|</td></tr>|[10kΩ Resistor](https://vetco.net/products/10k-ohm-1-4-watt-resistor)|$1|
 |[PN2222 Transistor](https://vetco.net/products/2n3904-bc547-pn2222-2n4401-npn-transistor-5pk-nte123ap-5/nte123ap-5)|$1|
 |[RLY5310C Relay](https://vetco.net/products/relay-5vdc-6vdc-spst-no-500-ma)|$5|
 |[66 x 66 x 28mm ABS Project Box](https://vetco.net/products/66-x-66-x-28mm-abs-box-black/ham-1593jbk)|$4|
