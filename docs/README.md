@@ -1,6 +1,10 @@
-We wanted to camp overnight in our 2018 Chrysler Pacifica Hybrid. If the van is plugged in or the battery is charged enough, the climate system can run overnight without the engine turning on. 
+We wanted to camp overnight in our 2018 Chrysler Pacifica Hybrid. If the van is plugged in or the battery is charged enough, the climate system can run overnight without the engine turning on. Unfortunately, the van turns itself off after 30 minutes if left in Park (or while charging). 
 
-Unfortunately, the van turns itself off after 30 minutes if left in Park (or while charging). We built a simple device which turns the van off and on again every 28 minutes, so that the climate system stays on all night.
+We built a simple device which turns the van off and on again every 28 minutes, so that the climate system stays on all night. Here's a quick video of it working - look at the lights on the Start Button to see the car turn off and back on.
+
+<video width="640" height="360" controls>
+ <source src="images/walkthrough/QuickDemo.mp4" type="video/mp4" />
+</video>
 
 The device uses a Raspberry Pi computer to control the timing, and a simple circuit with a transistor and relay which basically just touch two wires from the Start Button together, acting just like when the Start Button is pressed. This design leaves the security of the car intact - a key fob is still required to start it. The program turns the car off and on again every 28 minutes for 12 hours after the Raspberry Pi is turned on.
 
@@ -9,12 +13,6 @@ The Raspberry Pi is powered by the USB outlet in the floor, which can be set to 
 The wire connected to the Start Button in the car just has the wires inserted into the wiring harness plugged into the Start Button and then taped with electrical tape, so that it's fully removeable. On the other end it connects to the circuit with a barrel connector, so that the computer can be fully disconnected from the car when it's not being used overnight.
 
 You'll need soldering skills and a soldering iron and to know how to set up a Raspberry Pi computer to build this device.
-
-Here's a quick video of it working - look at the lights on the Start Button to see the car turn off and back on.
-
-<video width="640" height="360" controls>
- <source src="images/walkthrough/QuickDemo.mp4" type="video/mp4" />
-</video>
 
 ## Tools
 <table>
@@ -27,11 +25,11 @@ Here's a quick video of it working - look at the lights on the Start Button to s
 
 ## Parts
 <table>
-<th><td>Description</td><td>Price</td></th>
+<tr><th>Description</th><th>Price</th></tr>
 <tr><td markdown="span">[Raspberry Pi Zero WH](https://www.adafruit.com/product/3708)</td><td markdown="span">$14</td></tr>
 <tr><td markdown="span">[Raspberry Pi Zero Case](https://www.adafruit.com/product/3252)</td><td markdown="span">$5</td></tr>
 <tr><td markdown="span">[8GB Micro SD Card](https://www.adafruit.com/product/2820)</td><td markdown="span">$10</td></tr>
-<tr><td markdown="span">Micro USB Cable</td><td></td></tr>|
+<tr><td markdown="span">Micro USB Cable</td><td></td></tr>
 <tr><td markdown="span">[10kΩ Resistor](https://vetco.net/products/10k-ohm-1-4-watt-resistor)</td><td markdown="span">$1</td></tr>
 <tr><td markdown="span">[PN2222 Transistor](https://vetco.net/products/2n3904-bc547-pn2222-2n4401-npn-transistor-5pk-nte123ap-5/nte123ap-5)</td><td markdown="span">$1</td></tr>
 <tr><td markdown="span">[RLY5310C Relay](https://vetco.net/products/relay-5vdc-6vdc-spst-no-500-ma)</td><td markdown="span">$5</td></tr>
@@ -66,8 +64,8 @@ Here's a quick video of it working - look at the lights on the Start Button to s
 ## Circuit Assembly
 Solder together the circuit as shown in the circuit diagram. Carefully check that the relay and transistor are connected in the right order.
 
-* On the transistor, the relay connects to the 'collector', the resistor to the 'base', and ground to the 'emitter'. If you hold the transistor with the round side on the left, the pins going from top to bottom are collector, base, emitter.
-* On the relay, pin 3 must connect to 5v on the Raspberry Pi and pin 5 to the transistor collector. Pins 1 and 7 (the outer two) connect to the 2.1mm mount jack (in any order). The relay pins are numbered 1, 3, 5, and 7, with the 'notch' on the chip next to pin 1.
+* On the <a href="images/PN2222.PNG">transistor</a>, the relay connects to the 'collector', the resistor to the 'base', and ground to the 'emitter'. If you hold the transistor with the round side on the left, the pins going from top to bottom are collector, base, emitter.
+* On the <a href="images/5310C.PNG">relay</a>, pin 3 must connect to 5v on the Raspberry Pi and pin 5 to the transistor collector. Pins 1 and 7 (the outer two) connect to the 2.1mm mount jack (in any order). The relay pins are numbered 1, 3, 5, and 7, with the 'notch' on the chip next to pin 1.
 * Drill a hole into the project box to mount the 2.1mm jack. Try not to heat the jack too much when soldering it. 
 * Drill a hole for the breadboard jumper wires and connect to the Raspberry Pi - red to 5V (pin 4), black to ground (pin 6), grey to GPIO24 (pin 18). These are the second, third, and eighth pins on the edge of the Pi from the left side, if the Raspberry icon is upright.
 * Test the complete circuit by connecting the 5v pin to one of the 2.1mm jack contacts and the LED and resistor between the other contact and ground. It should turn on three times as when connected to the Pi directly.
@@ -82,13 +80,10 @@ Solder together the circuit as shown in the circuit diagram. Carefully check tha
 * Replace the plastic panel. Run the new cable down the right side into the back of the coin drawer in the van.
 * Test the full circuit with the car wiring.
 
-<table><tr>
-<td><img src="images/walkthrough/01.DashPanel.jpg" alt="Dash Panel" /></td>
-<td><img src="images/walkthrough/02.DashOff.jpg" alt="Dash Off" /></td>
-</tr><tr>
-<td><img src="images/walkthrough/03.StartButtonOut.jpg" alt="Start Button Out" /></td>
-<td><img src="images/walkthrough/04.WiresAdded.jpg" alt="Wires Added" /></td>
-</tr></table>
+<img src="images/walkthrough/01.DashPanel.jpg" alt="Dash Panel" />
+<img src="images/walkthrough/02.DashOff.jpg" alt="Dash Off" />
+<img src="images/walkthrough/03.StartButtonOut.jpg" alt="Start Button Out" />
+<img src="images/walkthrough/04.WiresAdded.jpg" alt="Wires Added" />
 
 ## Use
 * Keep the Raspberry Pi and circuit in the coin drawer under the climate controls.
