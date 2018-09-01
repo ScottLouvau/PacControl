@@ -74,6 +74,7 @@ Solder together the circuit as shown in the circuit diagram. Carefully check tha
 * Drill a hole for the breadboard jumper wires and connect to the Raspberry Pi - red to 5V (pin 4), black to ground (pin 6), grey to GPIO24 (pin 18). These are the second, third, and eighth pins on the edge of the Pi from the left side, if the Raspberry icon is upright.
 * Test the complete circuit by connecting the 5v pin to one of the 2.1mm jack contacts and the LED and resistor between the other contact and ground. It should turn on three times as when connected to the Pi directly.
 
+![Circuit Diagram](images/circuit.PNG)
 
 ## Van Cable Installation
 * Remove the plastic panel under the steering wheel. It's held in place by clips; make sure to remove the OBD2 Port, Hood Release, Headlight Switch, and Speaker Harness before fully removing it.
@@ -111,6 +112,7 @@ We used GPIO24 because it's off by default on boot.
 ![Start Button Out](images/walkthrough/03.StartButtonOut.jpg)
 ![WiresAdded](images/walkthrough/04.WiresAdded.jpg)
 ![Raspberry Pi Test](images/walkthrough/05.PiLedTest.jpg)
+![Finished Device](images/walkthrough/Device.jpg)
 
 
 
