@@ -100,11 +100,11 @@ Solder together the circuit as shown in the circuit diagram. Carefully check tha
 * Alternate electrical components could be used. A 5v relay with minimal current use is needed to allow the Raspberry Pi to turn it on. A transistor is needed because the Pi can't power the relay with the 3.3v, 16mA GPIO pins.
 We used GPIO24 because it's off by default on boot.
 
-![Pacifica Dash Panel](https://github.com/vScottLouvau/PacControl/raw/master/images/walkthrough/01.DashPanel.jpg)
-![Dash Removed](https://github.com/vScottLouvau/PacControl/raw/master/images/walkthrough/02.DashOff.jpg)
-![Start Button Out](https://github.com/vScottLouvau/PacControl/raw/master/images/walkthrough/03.StartButtonOut.jpg)
-![WiresAdded](https://github.com/vScottLouvau/PacControl/raw/master/images/walkthrough/04.WiresAdded.jpg)
-![Raspberry Pi Test](https://github.com/vScottLouvau/PacControl/raw/master/images/walkthrough/05.PiLedTest.jpg)
+![Pacifica Dash Panel](images/walkthrough/01.DashPanel.jpg)
+![Dash Removed](images/walkthrough/02.DashOff.jpg)
+![Start Button Out](images/walkthrough/03.StartButtonOut.jpg)
+![WiresAdded](images/walkthrough/04.WiresAdded.jpg)
+![Raspberry Pi Test](images/walkthrough/05.PiLedTest.jpg)
 
 
 
