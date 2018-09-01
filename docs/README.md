@@ -23,24 +23,25 @@ Here's a quick video of it working - look at the lights on the Start Button to s
 <tr><td markdown="span">Soldering Iron, Solder, Wire</td></tr>
 <tr><td markdown="span">[Mini HDMI to HDMI Cable](https://www.adafruit.com/product/2775)</td></tr>
 <tr><td markdown="span">USB Hub, Keyboard, and Mouse</td></tr>
-<tr><td markdown="span">Test [LED](https://vetco.net/products/nte30036-blue-led-3mm/nte30036), 330Ω Resistor, [Breadboard]</td></tr>
-<tr><td markdown="span">(https://vetco.net/products/170-point-mini-breadboard-white/vupn6674)</td></tr>
+<tr><td markdown="span">Test [LED](https://vetco.net/products/nte30036-blue-led-3mm/nte30036), 330Ω Resistor, [Breadboard](https://vetco.net/products/170-point-mini-breadboard-white/vupn6674)</td></tr>
 </table>
 
 ## Parts
-<tr><td markdown="span">Description|Price|
-|-----------|-----|
-|[Raspberry Pi Zero WH](https://www.adafruit.com/product/3708)|$14|
-|[Raspberry Pi Zero Case](https://www.adafruit.com/product/3252)|$5|
-|[8GB Micro SD Card](https://www.adafruit.com/product/2820)|$10|
-|Micro USB Cable|</td></tr>|[10kΩ Resistor](https://vetco.net/products/10k-ohm-1-4-watt-resistor)|$1|
-|[PN2222 Transistor](https://vetco.net/products/2n3904-bc547-pn2222-2n4401-npn-transistor-5pk-nte123ap-5/nte123ap-5)|$1|
-|[RLY5310C Relay](https://vetco.net/products/relay-5vdc-6vdc-spst-no-500-ma)|$5|
-|[66 x 66 x 28mm ABS Project Box](https://vetco.net/products/66-x-66-x-28mm-abs-box-black/ham-1593jbk)|$4|
-|[20 PIN DIP IC Protoboard](https://vetco.net/products/20-pin-dip-ic-pattern-protoboard-1-8-x-3-6-qty-2/vupn8048)|$3|
-|[2.1mm Mount Jack](https://vetco.net/products/2-1mm-dc-power-panel-mount-jack-ph-2112/ph-2112)|$3|
-|[2.1mm Plug and Cable](https://vetco.net/products/2-1mm-dc-power-plug-right-angle-w-6-cable/ph-tc210)|$3|
-|[Female-Female Breadboard Jumper Wire](https://vetco.net/products/8-5-female-female-rainbow-breadboard-jumper-wire-for-arduino-10-pack/vupn6981)|$4|
+<table>
+<tr><td markdown="span">
+<th><td>Description</td><td>Price</td></th>
+<tr><td markdown="span">[Raspberry Pi Zero WH](https://www.adafruit.com/product/3708)</td><td markdown="span">$14</td></tr>
+<tr><td markdown="span">[Raspberry Pi Zero Case](https://www.adafruit.com/product/3252)</td><td markdown="span">$5</td></tr>
+<tr><td markdown="span">[8GB Micro SD Card](https://www.adafruit.com/product/2820)</td><td markdown="span">$10</td></tr>
+<tr><td markdown="span">Micro USB Cable|</td></tr>|[10kΩ Resistor](https://vetco.net/products/10k-ohm-1-4-watt-resistor)</td><td markdown="span">$1</td></tr>
+<tr><td markdown="span">[PN2222 Transistor](https://vetco.net/products/2n3904-bc547-pn2222-2n4401-npn-transistor-5pk-nte123ap-5/nte123ap-5)</td><td markdown="span">$1</td></tr>
+<tr><td markdown="span">[RLY5310C Relay](https://vetco.net/products/relay-5vdc-6vdc-spst-no-500-ma)</td><td markdown="span">$5</td></tr>
+<tr><td markdown="span">[66 x 66 x 28mm ABS Project Box](https://vetco.net/products/66-x-66-x-28mm-abs-box-black/ham-1593jbk)</td><td markdown="span">$4</td></tr>
+<tr><td markdown="span">[20 PIN DIP IC Protoboard](https://vetco.net/products/20-pin-dip-ic-pattern-protoboard-1-8-x-3-6-qty-2/vupn8048)</td><td markdown="span">$3</td></tr>
+<tr><td markdown="span">[2.1mm Mount Jack](https://vetco.net/products/2-1mm-dc-power-panel-mount-jack-ph-2112/ph-2112)</td><td markdown="span">$3</td></tr>
+<tr><td markdown="span">[2.1mm Plug and Cable](https://vetco.net/products/2-1mm-dc-power-plug-right-angle-w-6-cable/ph-tc210)</td><td markdown="span">$3</td></tr>
+<tr><td markdown="span">[Female-Female Breadboard Jumper Wire](https://vetco.net/products/8-5-female-female-rainbow-breadboard-jumper-wire-for-arduino-10-pack/vupn6981)</td><td markdown="span">$4</td></tr>
+</table>
 
 # Instructions
 
@@ -60,6 +61,7 @@ Here's a quick video of it working - look at the lights on the Start Button to s
 * Edit /etc/rc.local. At the end, add this line: "home/pi/pacControl/pacControl &"
 * Test the Raspberry Pi by connecting an LED and resistor between the ground and signal pins (GPIO 24, pin 18). Ensure you see it turn on three times about 15 seconds after the Pi is connected to power.
 
+![Raspberry Pi Test](images/walkthrough/05.PiLedTest.jpg)
 
 ## Circuit Assembly
 Solder together the circuit as shown in the circuit diagram. Carefully check that the relay and transistor are connected in the right order.
@@ -80,6 +82,10 @@ Solder together the circuit as shown in the circuit diagram. Carefully check tha
 * Replace the plastic panel. Run the new cable down the right side into the back of the coin drawer in the van.
 * Test the full circuit with the car wiring.
 
+<table><tr>
+<td><img src="images/walkthrough/03.StartButtonOut.jpg" alt="Start Button Out" /></td>
+<td><img src="images/walkthrough/04.WiresAdded.jpg" alt="Wires Added" /></td>
+</tr></table>
 
 ## Use
 * Keep the Raspberry Pi and circuit in the coin drawer under the climate controls.
@@ -105,9 +111,7 @@ We used GPIO24 because it's off by default on boot.
 
 ![Pacifica Dash Panel](images/walkthrough/01.DashPanel.jpg)
 ![Dash Removed](images/walkthrough/02.DashOff.jpg)
-![Start Button Out](images/walkthrough/03.StartButtonOut.jpg)
-![WiresAdded](images/walkthrough/04.WiresAdded.jpg)
-![Raspberry Pi Test](images/walkthrough/05.PiLedTest.jpg)
+
 ![Finished Device](images/walkthrough/Device.jpg)
 
 
