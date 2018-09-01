@@ -16,7 +16,7 @@ You'll need soldering skills and a soldering iron and to know how to set up a Ra
 </video>
 
 ## Tools
-| |
+| Name |
 | ---- |
 | Multimeter |
 | Soldering Iron, Solder, Wire |
