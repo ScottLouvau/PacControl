@@ -83,6 +83,9 @@ Solder together the circuit as shown in the circuit diagram. Carefully check tha
 * Test the full circuit with the car wiring.
 
 <table><tr>
+<td><img src="images/walkthrough/01.DashPanel.jpg" alt="Dash Panel" /></td>
+<td><img src="images/walkthrough/02.DashOff.jpg" alt="Dash Off" /></td>
+</tr><tr>
 <td><img src="images/walkthrough/03.StartButtonOut.jpg" alt="Start Button Out" /></td>
 <td><img src="images/walkthrough/04.WiresAdded.jpg" alt="Wires Added" /></td>
 </tr></table>
@@ -96,7 +99,8 @@ Solder together the circuit as shown in the circuit diagram. Carefully check tha
  * Place a key fob close to the driver seat (in the coin drawer works well).
  * Connect the 2.1mm plug and USB power cable to the circuit.
  * Go to sleep. =)
-		
+
+![Finished Device](images/device.jpg)
 
 ## Troubleshooting
 * Test touching the two wires connected to the Start Button together to ensure the van side is working.
@@ -108,12 +112,5 @@ Solder together the circuit as shown in the circuit diagram. Carefully check tha
 * A relay circuit is needed because the van signal wire voltage goes up when it's connected, so a transistor won't stay 'on'.
 * Alternate electrical components could be used. A 5v relay with minimal current use is needed to allow the Raspberry Pi to turn it on. A transistor is needed because the Pi can't power the relay with the 3.3v, 16mA GPIO pins.
 We used GPIO24 because it's off by default on boot.
-
-![Pacifica Dash Panel](images/walkthrough/01.DashPanel.jpg)
-![Dash Removed](images/walkthrough/02.DashOff.jpg)
-
-![Finished Device](images/walkthrough/Device.jpg)
-
-
 
 
