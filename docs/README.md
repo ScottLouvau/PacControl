@@ -11,11 +11,17 @@ The wire connected to the Start Button in the car just has the wires inserted in
 
 You'll need soldering skills and a soldering iron and to know how to set up a Raspberry Pi computer to build this device.
 
-<video width="480" height="270" controls>
- <source src="images/walkthrough/Video.BreadboardWorking.mp4" type="video/mp4" />
+<video width="640" height="360" controls>
+ <source src="images/walkthrough/QuickDemo.mp4" type="video/mp4" />
 </video>
 
 ## Tools
+| Priority apples | Second priority | Third priority |
+|-------|--------|---------|
+| ambrosia | gala | red delicious |
+| pink lady | jazz | macintosh |
+| honeycrisp | granny smith | fuji |
+
 | Name |
 | ---- |
 | Multimeter |
