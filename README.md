@@ -11,6 +11,10 @@ The wire connected to the Start Button in the car just has the wires inserted in
 
 You'll need soldering skills and a soldering iron and to know how to set up a Raspberry Pi computer to build this device.
 
+<video width="480" height="270" controls>
+ <source src="images/walkthrough/Video.BreadboardWorking.mp4" type="video/mp4" />
+</video>
+
 ## Tools
 | |
 | ---- |
@@ -50,8 +54,8 @@ You'll need soldering skills and a soldering iron and to know how to set up a Ra
 ## Program Raspberry Pi
 * Download a Raspbian image to the SD card, if it wasn't pre-installed.
 * Download the 'WiringPi' library.
-* Copy the code shown below to /home/pi/carControl/
-* Edit /etc/rc.local. At the end, add this line: "home/pi/carControl/carControl &"
+* Copy the code shown below to /home/pi/pacControl/
+* Edit /etc/rc.local. At the end, add this line: "home/pi/pacControl/pacControl &"
 * Test the Raspberry Pi by connecting an LED and resistor between the ground and signal pins (GPIO 24, pin 18). Ensure you see it turn on three times about 15 seconds after the Pi is connected to power.
 
 
@@ -95,5 +99,13 @@ Solder together the circuit as shown in the circuit diagram. Carefully check tha
 * A relay circuit is needed because the van signal wire voltage goes up when it's connected, so a transistor won't stay 'on'.
 * Alternate electrical components could be used. A 5v relay with minimal current use is needed to allow the Raspberry Pi to turn it on. A transistor is needed because the Pi can't power the relay with the 3.3v, 16mA GPIO pins.
 We used GPIO24 because it's off by default on boot.
+
+![Pacifica Dash Panel](https://github.com/vScottLouvau/PacControl/raw/master/images/walkthrough/01.DashPanel.jpg)
+![Dash Removed](https://github.com/vScottLouvau/PacControl/raw/master/images/walkthrough/02.DashOff.jpg)
+![Start Button Out](https://github.com/vScottLouvau/PacControl/raw/master/images/walkthrough/03.StartButtonOut.jpg)
+![WiresAdded](https://github.com/vScottLouvau/PacControl/raw/master/images/walkthrough/04.WiresAdded.jpg)
+![Raspberry Pi Test](https://github.com/vScottLouvau/PacControl/raw/master/images/walkthrough/05.PiLedTest.jpg)
+
+
 
 
