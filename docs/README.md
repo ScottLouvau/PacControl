@@ -1,4 +1,3 @@
-# PacControl
 We wanted to camp overnight in our 2018 Chrysler Pacifica Hybrid. If the van is plugged in or the battery is charged enough, the climate system can run overnight without the engine turning on. 
 
 Unfortunately, the van turns itself off after 30 minutes if left in Park (or while charging). We built a simple device which turns the van off and on again every 28 minutes, so that the climate system stays on all night.
@@ -28,12 +27,12 @@ Here's a quick video of it working - look at the lights on the Start Button to s
 
 ## Parts
 <table>
-<tr><td markdown="span">
 <th><td>Description</td><td>Price</td></th>
 <tr><td markdown="span">[Raspberry Pi Zero WH](https://www.adafruit.com/product/3708)</td><td markdown="span">$14</td></tr>
 <tr><td markdown="span">[Raspberry Pi Zero Case](https://www.adafruit.com/product/3252)</td><td markdown="span">$5</td></tr>
 <tr><td markdown="span">[8GB Micro SD Card](https://www.adafruit.com/product/2820)</td><td markdown="span">$10</td></tr>
-<tr><td markdown="span">Micro USB Cable|</td></tr>|[10kΩ Resistor](https://vetco.net/products/10k-ohm-1-4-watt-resistor)</td><td markdown="span">$1</td></tr>
+<tr><td markdown="span">Micro USB Cable</td><td></td></tr>|
+<tr><td markdown="span">[10kΩ Resistor](https://vetco.net/products/10k-ohm-1-4-watt-resistor)</td><td markdown="span">$1</td></tr>
 <tr><td markdown="span">[PN2222 Transistor](https://vetco.net/products/2n3904-bc547-pn2222-2n4401-npn-transistor-5pk-nte123ap-5/nte123ap-5)</td><td markdown="span">$1</td></tr>
 <tr><td markdown="span">[RLY5310C Relay](https://vetco.net/products/relay-5vdc-6vdc-spst-no-500-ma)</td><td markdown="span">$5</td></tr>
 <tr><td markdown="span">[66 x 66 x 28mm ABS Project Box](https://vetco.net/products/66-x-66-x-28mm-abs-box-black/ham-1593jbk)</td><td markdown="span">$4</td></tr>
@@ -56,11 +55,12 @@ Here's a quick video of it working - look at the lights on the Start Button to s
 
 ## Program Raspberry Pi
 * Download a Raspbian image to the SD card, if it wasn't pre-installed.
-* Download the 'WiringPi' library.
-* Copy the code shown below to /home/pi/pacControl/
+* Download the code and binaries to /home/pi/pacControl/
+* Download the '<a href="http://wiringpi.com/download-and-install/">WiringPi</a>' library.
 * Edit /etc/rc.local. At the end, add this line: "home/pi/pacControl/pacControl &"
 * Test the Raspberry Pi by connecting an LED and resistor between the ground and signal pins (GPIO 24, pin 18). Ensure you see it turn on three times about 15 seconds after the Pi is connected to power.
 
+<img src="https://www.raspberrypi.org/documentation/usage/gpio/images/gpio-numbers-pi2.png" alt="Raspberry Pi GPIO Pins" />
 ![Raspberry Pi Test](images/walkthrough/05.PiLedTest.jpg)
 
 ## Circuit Assembly
