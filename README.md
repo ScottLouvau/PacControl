@@ -4,4 +4,4 @@ Unfortunately, the van turns itself off after 30 minutes if left in Park (or whi
 
 [See Documentation](https://vscottlouvau.github.io/PacControl/)
 
-![Finished Device](images/device.jpg)
+![Finished Device](docs/images/device.jpg)
