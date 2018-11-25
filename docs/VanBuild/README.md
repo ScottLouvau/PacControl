@@ -1,10 +1,8 @@
-In order to camp in our Pacifica, we built a bed platform for the adults just behind the second row seats and one for each kid to sleep across one of the front two rows. 
+We wanted to be able to sleep in our Pacifica, and for it to be more comfortable and faster to get to bed and get going than a random motel. We're picky sleepers and need our room to be dark, quiet, cool, and the bed to be right. Most motels don't have all of these things right, so we usually don't sleep especially well.
 
-We wanted the van to be more comfortable and faster to get to bed and get going than a random motel. We're picky sleepers and need our room to be dark, quiet, cool, and the bed to be right. Most motels don't have all of these things right, so we usually don't sleep especially well.
+When we can plug our van in, we're very close - our window shades block light, the built-in noise cancellation and fan cover most sounds, the climate system keeps exactly 64F, and we have the same bed and bedding every night. On our last trip, we were set up and in bed 20 minutes after parking. In the morning, we started driving 25 minutes after waking up.
 
-When we can plug our van in, we feel we're very close - our window shades block any light, the built-in noise cancellation and fan noise cover most sounds, the climate system keeps exactly 64F, and we have the same bed and bedding every night. On our last trip, we were set up and in bed 20 minutes after parking. In the morning, we started driving 25 minutes after waking up.
-
-Of course, our van has no bathroom or showers, so we have to find them around us or do without. It's a small space, so we have to take turns getting dressed and can't bring much with us.
+Our van has no bathroom or showers, so we have to find them around us or do without. It's a small space for four people, so we have to take turns getting dressed and can't bring much with us.
 
 Most importantly, we still have to find a place to plug in. When unplugged, if the van is turned on without the brake pressed, the fan runs but the heater and A/C don't. We sleep with the van off and a window cracked and warmer bedding. This loses most of the sound isolation and it isn't much warmer than outside but is more comfortable than a tent. With a down comforter and sleeping bags, we're able to sleep down to lows of about 30F.
 
