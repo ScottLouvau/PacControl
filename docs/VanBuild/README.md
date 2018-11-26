@@ -2,15 +2,18 @@ We wanted to be able to sleep in our Pacifica, and for it to be more comfortable
 
 When we can plug our van in, we're very close - our window shades block light, the built-in noise cancellation and fan cover most sounds, the climate system keeps exactly 64F, and we have the same bed and bedding every night. On our last trip, we were set up and in bed 20 minutes after parking. In the morning, we started driving 25 minutes after waking up.
 
+<table>
+<tr>
+  <td><img src="images/DayMode.jpg" alt="Day Mode" /></td>
+  <td><img src="images/NightMode.jpg" alt="Adult Bed" /></td>
+</tr>
+</table>
+
 Our van has no bathroom or showers, so we have to find them around us or do without. It's a small space for four people, so we have to take turns getting dressed and can't bring much with us.
 
 Most importantly, we still have to find a place to plug in. When unplugged, if the van is turned on without the brake pressed, the fan runs but the heater and A/C don't. We sleep with the van off and a window cracked and warmer bedding. This loses most of the sound isolation and it isn't much warmer than outside but is more comfortable than a tent. With a down comforter and sleeping bags, we're able to sleep down to lows of about 30F.
 
 Our next goals are to either get the van to heat itself unplugged or learn how to find overnight plug-in parking without a days-in-advance reservation and at a much-lower-than-motel cost. We also need to work out better ways to store our stuff and get changed easily.
-
-<img src="images/DayMode.jpg" alt="Day Mode" />
-<img src="images/NightMode.jpg" alt="Adult Bed" />
-<img src="images/AtForestSnopark.jpg" alt="At Forest Sno-Park" />
 
 ## Kid Bed Platforms
 The kid bed platforms go across the front and second row seats. They are 17" x 48" OSB boards wrapped with 1/2" foam and custom covers and then inserted into rectangular sleeping bags. They are large enough for the kids (for now, ages 5 and 7) and fully fill the space between the seat backs and the next row up or the dashboard, so they don't move around. The van seat bottoms are not flat, so we bought some triangular foam yoga wedges to provide a flat surface underneath them. The one which goes across the front row also has two square foam pads so that it sits on both the seats and center console.
@@ -42,3 +45,5 @@ The platform is 7.5" above the floor in the back, allowing us to store six 48L p
 To control light, we made window shades from Reflectix for each of the six side windows and the rear window. We spray painted one side matte black, so the shades are subtle when black side out. We bought a normal folding windshield shade for the front. We also cut a few fake leather strips to cover the charging indicator LEDs and the instrument cluster, which can't be turned off when the van is on.
 
 For summer unplugged camping, we bought mosquito screens which fit around the front doors and made screens with a magnetic strip to put over the sliding door windows. We also got a USB powered fan. The van is hotter than outside during the summer, so these help keep temperatures reasonable.
+
+<img src="images/AtForestSnopark.jpg" alt="At Forest Sno-Park" />
