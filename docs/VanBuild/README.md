@@ -8,12 +8,17 @@ Most importantly, we still have to find a place to plug in. When unplugged, if t
 
 Our next goals are to either get the van to heat itself unplugged or learn how to find overnight plug-in parking without a days-in-advance reservation and at a much-lower-than-motel cost. We also need to work out better ways to store our stuff and get changed easily.
 
+<img src="images/DayMode.jpg" alt="Day Mode" />
+<img src="images/NightMode.jpg" alt="Adult Bed" />
+<img src="images/AtForestSnopark.jpg" alt="At Forest Sno-Park" />
 
 ## Kid Bed Platforms
 The kid bed platforms go across the front and second row seats. They are 17" x 48" OSB boards wrapped with 1/2" foam and custom covers and then inserted into rectangular sleeping bags. They are large enough for the kids (for now, ages 5 and 7) and fully fill the space between the seat backs and the next row up or the dashboard, so they don't move around. The van seat bottoms are not flat, so we bought some triangular foam yoga wedges to provide a flat surface underneath them. The one which goes across the front row also has two square foam pads so that it sits on both the seats and center console.
 
 We originally set up sleeping bags on top of the platforms, but keeping them wrapped around means we keep all the kid bedding together and don't have to pack and unpack it every night.
 
+<img src="images/YogaWedges.jpg" alt="Yoga Wedges" />
+<img src="images/FrontKidBed.jpg" alt="Front Kid Bed" />
 
 ## Adult Bed Platform
 We initially tried sleeping behind the second row seats on our camping pads, but that didn't work. There's not enough length from the trunk lid to the second row seat bases for me (5' 10") to stretch out. The floor slopes downward 8" during that length, which is very hard to flatten out. Finally, there was no room for our stuff unless it was all on top of the bed, which made setup very time consuming.
@@ -28,9 +33,12 @@ The shelf feet started cutting into the floor in the van, so we added rubber fee
 
 The platform is 7.5" above the floor in the back, allowing us to store six 48L plastic bins (23"w x 16.25"l x 6"h) underneath. We pack bins with clothes, food, or cooking supplies, or we can have things which don't fit (camp stove) by themselves.
 
+<img src="images/FoamPlatform.jpg" alt="Foam Platform" />
+<img src="images/PegboardAndBoosterBases.jpg" alt="Pegboard Slideout Detail" />
+<img src="images/AdultBedSlideout.jpg" alt="Adult Bed Slideout" />
+<img src="images/NightMode.jpg" alt="Adult Bed" />
 
 ## Other Features
 To control light, we made window shades from Reflectix for each of the six side windows and the rear window. We spray painted one side matte black, so the shades are subtle when black side out. We bought a normal folding windshield shade for the front. We also cut a few fake leather strips to cover the charging indicator LEDs and the instrument cluster, which can't be turned off when the van is on.
 
 For summer unplugged camping, we bought mosquito screens which fit around the front doors and made screens with a magnetic strip to put over the sliding door windows. We also got a USB powered fan. The van is hotter than outside during the summer, so these help keep temperatures reasonable.
-
