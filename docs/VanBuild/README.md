@@ -2,12 +2,8 @@ We wanted to be able to sleep in our Pacifica, and for it to be more comfortable
 
 When we can plug our van in, we're very close - our window shades block light, the built-in noise cancellation and fan cover most sounds, the climate system keeps exactly 64F, and we have the same bed and bedding every night. On our last trip, we were set up and in bed 20 minutes after parking. In the morning, we started driving 25 minutes after waking up.
 
-<table>
-<tr>
-  <td><img src="images/DayMode.jpg" alt="Day Mode" /></td>
-  <td><img src="images/NightMode.jpg" alt="Adult Bed" /></td>
-</tr>
-</table>
+<img src="images/DayMode.jpg" alt="Day Mode" />
+<img src="images/NightMode.jpg" alt="Adult Bed" />
 
 Our van has no bathroom or showers, so we have to find them around us or do without. It's a small space for four people, so we have to take turns getting dressed and can't bring much with us.
 
