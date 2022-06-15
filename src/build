@@ -1,4 +1,3 @@
 #!/bin/bash
-cd /home/pi/pacControl
 gcc -o pacControl pacControl.c -l wiringPi
 gcc -o test test.c -l wiringPi

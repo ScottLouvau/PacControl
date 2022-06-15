@@ -1,4 +1,4 @@
-PacControl v1.0, Scott Louvau, 2018.
+PacControl v1.0, Scott Louvau, 2018-2022.
 This software is used to keep the climate system running all night in a 2017+ Chrysler Pacifica Hybrid.
 The car turns off automatically after 30 minutes when in Park or plugged in.
 This software, when connected to a relay which connects the Start Button 12v and signal wires,
@@ -8,8 +8,9 @@ will turn the car off and on again every 28 minutes for 12 hours.
 Configure this to run on boot
 =============================
 sudo nano /etc/rc.local
-Add this line:
-/home/pi/pacControl/pacControl >> /home/pi/pacControl/pacControl.log &
+
+Before the "exit 0" line, add this line:
+/home/pi/PacControl/src/pacControl >> /home/pi/PacControl/src/pacControl.log &
 
 
 Configure 1280x720 screen resolution

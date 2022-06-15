@@ -30,6 +30,7 @@ You'll need soldering skills and a soldering iron and to know how to set up a Ra
 <tr><th>Description</th><th>Price</th></tr>
 <tr><td markdown="span">[Raspberry Pi Zero WH](https://www.adafruit.com/product/3708)</td><td markdown="span">$14</td></tr>
 <tr><td markdown="span">[Raspberry Pi Zero Case](https://www.adafruit.com/product/3252)</td><td markdown="span">$5</td></tr>
+<tr><td markdown="span">[Mini HDMI to HDMI Adapter](https://www.adafruit.com/product/2819)</td><td markdown="span">$3</td></tr>
 <tr><td markdown="span">[8GB Micro SD Card](https://www.adafruit.com/product/2820)</td><td markdown="span">$10</td></tr>
 <tr><td markdown="span">Micro USB Cable</td><td></td></tr>
 <tr><td markdown="span">[10kΩ Resistor](https://vetco.net/products/10k-ohm-1-4-watt-resistor)</td><td markdown="span">$1</td></tr>
@@ -53,12 +54,52 @@ You'll need soldering skills and a soldering iron and to know how to set up a Ra
 * Leave a window cracked open when using this, so that if the car does turn off for some reason, you still have ventilation.
 * Test this at home a few times before using it on the road to make sure everything is working reliably.
 
-## Program Raspberry Pi
-* Download a Raspbian image to the SD card, if it wasn't pre-installed.
-* Download the <a href="https://github.com/vScottLouvau/PacControl/tree/master/src">code and binaries</a> to /home/pi/pacControl/
-* Download the '<a href="http://wiringpi.com/download-and-install/">WiringPi</a>' library.
-* Edit /etc/rc.local. At the end, add this line: "home/pi/pacControl/pacControl &"
-* Test the Raspberry Pi by connecting an LED and resistor between the ground and signal pins (GPIO 24, pin 18). Ensure you see it turn on three times about 15 seconds after the Pi is connected to power.
+## Set up SD Card
+* Set up the SD card with <a href="https://www.raspberrypi.com/software/">'Raspberry Pi Imager'</a> on a PC or Mac.
+  * Choose 'Raspberry Pi OS (Other)', then 'Raspberry Pi OS Lite (32-bit)'.
+  * Click the gear icon.
+    * Check 'Set hostname' (the default is fine).
+    * Check 'Set username and password' (username 'pi', password is up to you).
+    * Check 'Configure wireless LAN' and provide your home Wifi network name and password.
+    * Check 'Set locale settings' and provide your Time Zone and Keyboard layout.
+    * Click Save
+  * Click Write.
+
+## Set up Raspberry Pi
+Put the SD card in the Pi Zero, connect a monitor and keyboard, and connect power to boot it. Once it settles at a command prompt, run:
+
+* sudo apt update
+* sudo apt upgrade
+* sudo apt-get install git-core
+* cd /home/pi
+* git clone https://github.com/WiringPi/WiringPi
+* cd WiringPi
+* ./build
+* cd /home/pi
+* git clone https://github.com/ScottLouvau/PacControl
+* cd PacControl/src
+* chmod +x build
+* ./build
+
+## Test PacControl
+Connect an LED and resistor between pin 18 (program will blink) and pin 20 (ground).
+(Pin 1 has a square outline. Pin 2 is next to it. Going down the line, it's Pin 4, 6, 8, ...).
+
+On the Pi command prompt, run:
+/home/pi/PacControl/src/pacControl
+
+You should see "1: +-+-+-" as output. The LED should blink three times.
+
+## Set PacControl to run on startup
+On the Pi command prompt, run:
+sudo nano /etc/rc.local
+
+Add a line just before "exit 0" which says:
+/home/pi/PacControl/src/pacControl >> /home/pi/PacControl/src/pacControl.log &
+
+Press Ctrl+S and Ctrl+X to save.
+
+Disconnect and reconnect power from the Pi. Confirm that after about 30 seconds, the LED blinks three times.
 
 <img src="https://www.raspberrypi.org/documentation/usage/gpio/images/gpio-numbers-pi2.png" alt="Raspberry Pi GPIO Pins" />
 ![Raspberry Pi Test](images/walkthrough/05.PiLedTest.jpg)
@@ -100,8 +141,9 @@ Solder together the circuit as shown in the circuit diagram. Carefully check tha
 ![Finished Device](images/device.jpg)
 
 ## Troubleshooting
+* If the LED doesn't light up, confirm it's connected in the right order by connecting it between Pin 2 (5v) and Pin 20 (Ground). If it doesn't light up, the LED and resistor aren't right.
+* If the LED doesn't blink, manually run /home/pi/PacControl/src/pacControl and look at the output for potential problems.
 * Test touching the two wires connected to the Start Button together to ensure the van side is working.
-* Check the LEDs on the Raspberry Pi to ensure it's on and booting. Connect a monitor and keyboard to see that the program is running properly.
 * If the van is not turning on and off consistently, look at the van display to identify possible problems. In our case, the key was too far away (in the trunk area). If no messages are shown, check the wiring and solder connections.
 
 
@@ -109,5 +151,5 @@ Solder together the circuit as shown in the circuit diagram. Carefully check tha
 * A relay circuit is needed because the van signal wire voltage goes up when it's connected, so a transistor won't stay 'on'.
 * Alternate electrical components could be used. A 5v relay with minimal current use is needed to allow the Raspberry Pi to turn it on. A transistor is needed because the Pi can't power the relay with the 3.3v, 16mA GPIO pins.
 We used GPIO24 because it's off by default on boot.
-
-
+* Other builders have used an Arduino instead with 5v outputs, which eliminates the need for a transistor before the relay. This is a great alternative way to build the circuit with lower cost parts.
+* The 'WiringPi' official site says it's pre-installed with Raspberry Pi OS and not to install from GitHub, but those steps didn't work for me (June 2022). Cloning from GitHub and building worked well for me.
